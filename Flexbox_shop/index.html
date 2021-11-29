@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<header>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>home</title>
+    <script src="js/shoppingcart.js" async></script>
+</header>
+<!-- navbar -->
+<body>
+    <div class="top">
+        <a href="index.html">
+            <div class="item1 top_item">
+                <h2>Hem</h2>
+            </div>
+        </a>
+        <a href="products.html">
+            <div class="item2 top_item">
+                <h2>Produkter</h2>
+            </div>
+        </a>
+        <a href="contact.html">
+            <div class="item3 top_item">
+                <h2>Kontakt</h2>
+            </div>
+        </a>
+        <a href="about.html">
+            <div class="item4 top_item">
+                <h2>About us</h2>
+            </div>
+        </a>
+        <div class="shoppingcart">
+            <a href="#"><img src="img/shoppingcart.png" onclick="dropdown()" width="100%"></a>
+        </div>
+    </div>
+    <!-- shoppingcart -->
+    <div style="display: flex; justify-content: flex-end;" class="dropdown-ctn">
+        <div id="cartdropdown" class="shoppingcart-dropdown-container">
+            <div class="top-cart">
+                <p>Inkorg</p>
+            </div>
+            <div class="shoppingcart-items">
+                <button onclick="remove1()" style="display: flex; align-self: center; align-items: center; justify-content: center; width: 2em; height: 2em;">X</button>
+                <p id="cartitem1product">varukorg plats</p>
+                <p id="cartitem1price">$$$</p>
+            </div>
+            <div class="shoppingcart-items">
+                <button onclick="remove2()" style="display: flex; align-self: center; align-items: center; justify-content: center; width: 2em; height: 2em;">X</button>
+                <p id="cartitem2product">varukorg plats</p>
+                <p id="cartitem2price">$$$</p>
+            </div>
+        </div>
+    </div>
+    <!-- heading -->
+    <div class="rubrik">
+        <h1 position="absolute" >Hermans insamlade mobiler</h1>
+        <br>
+    </div>
+    <!-- products-->
+    <div class="products">
+        <!-- iphone 12 pro -->
+        <div class="product_whole">
+            <div class="product-image blocks">
+                <img src="img/iphone12.png">
+            </div>
+            <div class="product-info">
+                <h4 id="iphone12pro">Iphone 12 PRO</h4>
+                <h5 id="iphone12proprice">$69.69</h5>
+                <button onclick="iphone12pro()">lägg till i kundvagn</button>
+            </div>
+        </div>
+        <!-- nokia 3310 -->
+        <div class="product_whole">
+            <div class="product-image blocks">
+                <img src="img/nokia-3310.png">
+            </div>
+            <div class="product-info">
+                <h4 id="nokia-3310">Nokia-3310</h5>
+                <h5 id="nokia-3310price">$69.69</h6>
+                <button onclick="nokia3310()">lägg till i kundvagn</button>
+            </div>
+        </div>
+        <!-- Galaxy Zflip -->
+        <div class="product_whole">
+            <div class="product-image blocks">
+                <img src="img/zflip.png">
+            </div>
+            <div class="product-info">
+                <h4 id="zflip">Galaxy Zflip</h4>
+                <h5 id="zflipprice">$69.69</h5>
+                <button onclick="zflip()">lägg till i kundvagn</button>
+            </div>
+        </div>
+    </div>
+    <!-- textbox under products -->
+    <div class="about-top-textbox">
+        <div>
+            <p style="width: 50%; margin-left: 25%; margin-right: 25%;">Hermans insamlade mobiler är en mycket kvalitativ återförsäljare av begangade mobiler. Mobilerna samlas in under lektioner i webbutveckling. Om en mobil inte finns i lager så beror det troligen på att eleverna inte har hunnit köpa nya, alternativt så kanske jag blev påkommen i samband med insamlingen av mobilerna och sitter då i fängelse.</p>
+        </div>
+    </div>
+</body>
+<!-- footer -->
+<footer>
+    <div class="footer">
+        <div class="footer-1">
+            <p>hugo.sundbom@elev.ga.ntig.se</p>
+        </div>
+        <div class="footer-2">
+            <p>Sundboms affärer AB</p>
+        </div>
+    </div>
+</footer>
